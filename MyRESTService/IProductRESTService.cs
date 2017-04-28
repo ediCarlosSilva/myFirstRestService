@@ -14,7 +14,7 @@ namespace MyRESTService
     public interface IProductRESTService
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json,
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml,
             BodyStyle = WebMessageBodyStyle.Bare,
             UriTemplate = "GetProductList/")]
         List<Product> GetProductList();
